@@ -1,0 +1,50 @@
+@import '@/styles/_theme.scss';
+
+.help-flow {
+  padding: 10px $spacing 40px;
+  font-size: 14px;
+  span {
+    margin: 0 20px;
+  }
+}
+
+.help-material {
+  padding: 10px $spacing 30px;
+  p {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .tip {
+    margin-top: 10px;
+    font-size: 12px;
+    color: $theme-color;
+  }
+}
+
+.help-download {
+  padding: 10px $spacing 30px;
+  position: relative;
+  .help-download-content {
+    i {
+      width: 100px;
+      text-align: center;
+      font-size: 64px;
+      color: $theme-color;
+      float: left;
+      margin-top: 12px;
+    }
+    .help-download-txt {
+      float: left;
+      margin-left: 30px;
+      p {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+  .help-download-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+@import "_theme.scss";
+
+.overview-list {
+  display: flex;
+  margin-top: $spacing;
+  .overview-item {
+    background: #fff;
+    float: left;
+    padding: 20px;
+    height: 180px;
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+    &:last-child {
+      margin-right: 0;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    b {
+      font-size: 30px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "_theme.scss";
+
+.login-page {
+  height: 100%;
+  min-width: 400px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-panel {
+    width: 440px;
+    padding: 10px 30px 20px;
+    background: #fff;
+
+  }
+}
+
+.login-header {
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}

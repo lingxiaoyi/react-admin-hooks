@@ -1,0 +1,13 @@
+@import '@/styles/_theme.scss';
+
+.info-list {
+  padding: $spacing-h $spacing;
+  background: #fff;
+  .info-item {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 600;
+    float: left;
+    width: 240px;
+  }
+}

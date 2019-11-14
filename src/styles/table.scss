@@ -1,0 +1,125 @@
+@import "_theme.scss";
+
+// Table面板样式
+.ant-table-small {
+	border: none !important;
+}
+
+.ant-table-small.ant-table-bordered {
+	margin: 0 10px;
+	.ant-table-content {
+		// border: 1px solid #e8e8e8!important;
+		border: none!important;
+	}
+}
+
+.ant-table-small > .ant-table-content .ant-table-placeholder, .ant-table-small > .ant-table-content .ant-table-row:last-child td {
+	border-bottom: 1px solid $border-color!important;
+}
+
+.ant-table-wrapper {
+	.ant-table-tbody {
+		background: #fff;
+	}
+	.ant-table-thead > tr > th,
+	.ant-table-tbody > tr > td {
+		// text-align: left;
+		white-space: nowrap;	
+		padding: 15px $spacing!important;
+		color: $text-color;
+		border-bottom: 1px solid $border-color;
+	}
+	.ant-table-thead > tr > th {
+		border-bottom: none;
+		background: $table-header-bg !important;
+	}
+	.tr-weekend {
+		color: $danger-color;
+	}
+}
+
+
+.ant-table-selection-column {
+	min-width: 30px!important;
+	width: 30px!important;
+}
+
+.ant-table-empty .ant-table-body {
+	overflow-y: auto!important;
+}
+
+.ant-table-scroll {	
+	.ant-table-header {
+		// overflow-y: hidden!important;
+		margin-bottom: -$table-scrollbar-width!important;
+		&::-webkit-scrollbar {
+			width: 0;
+			height: $table-scrollbar-width;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: $table-scrollbar-width;
+			background: transparent;
+		}
+	}
+	.ant-table-body {
+		overflow-y: scroll;
+		&:hover::-webkit-scrollbar-thumb {
+			background: #d8d8d8;
+		}
+		&::-webkit-scrollbar {
+			width: $table-scrollbar-width;
+			height: $table-scrollbar-width;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: $table-scrollbar-width;
+			background: transparent;
+		}
+	}
+}
+
+.ant-table-fixed-right {
+	.ant-table-body-outer {
+		margin-bottom: 0!important;
+	}
+	.ant-table-body-inner {
+		overflow-y: scroll;
+		&:hover::-webkit-scrollbar-thumb {
+			background: #d8d8d8;
+		}
+		&::-webkit-scrollbar {
+			width: $table-scrollbar-width;
+			height: $table-scrollbar-width;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: $table-scrollbar-width;
+			background: transparent;
+		}
+	}
+}
+
+.table-page {
+	padding: $spacing;
+	.ant-pagination {
+		float: right;
+	}
+}
+.table-page-none {
+	height: $spacing;
+}
+
+.ant-table-row.active {
+	background: $table-header-bg;
+}
+
+.table-with-toolbar {
+	margin-right: 116px;
+}
+
+.table-with-btn {
+	position: relative;
+	.table-tr-btn {
+		position: absolute;
+		right: $spacing;
+		top: -$spacing-h - 32px - 4px;
+	}
+}

@@ -1,0 +1,150 @@
+@import "_theme.scss";
+
+/* checkbox */
+.checkbox-list.ant-checkbox-group {
+	margin-top: 4px;
+	.ant-checkbox-wrapper {
+		margin: 4px 20px 4px 0;
+	}
+}
+
+/* 工具栏表单样式 */
+.page-toolbar {
+	display: flex;
+	background: #fff;
+	padding: 15px 0;
+	.page-toolbar-form {
+		flex: 1;
+		padding-left: 10px;
+	}
+	.page-toolbar-btns {
+		text-align: center;
+		width: 190px;
+		border-left: 1px solid #e4eaee;
+		button {
+			display: block;
+			margin: 0 auto;
+			padding: 0 25px;
+		}
+		a {
+			line-height: 40px;
+		}
+	}
+}
+
+/* 工具栏等宽 */
+.page-toolbar-form .ant-form-item {
+	// width: 320px;
+	float: left;
+	background: #fff;
+	.ant-form-item-label {
+		width: 90px;
+		padding-right: 10px;
+	}
+	.ant-form-item-control-wrapper {
+		width: 230px;
+	}
+	.ant-calendar-picker-input {
+		width: 100%;
+	}
+	.ant-calendar-picker > .ant-calendar-picker-input {
+		width: 230px;
+	}
+	&.form-single-row {
+		height: 40px;
+		.ant-select-selection--multiple {
+			height: 32px;
+			margin-top: 4px;
+			overflow: hidden;
+		}
+	}
+}
+
+/* form */
+.page-form {
+	background: #fff;
+	padding: $spacing;
+	.form-flex {
+		width: 600px;
+		padding-left: 10px;
+		.ant-form-item {
+			margin-bottom: 25px;
+		}
+		.ant-form-item .ant-form-item-label {
+			width: 120px;
+			overflow: visible;
+			label {
+				float: left;
+			}
+		}
+		.form-item-nolabel {
+			margin-left: 120px;
+			button {
+				margin-right: 25px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		.ant-input-number,
+		.ant-calendar-picker {
+			width: 100%!important;
+		}
+	}
+	
+	.form-column {
+		padding: 0 10px;
+		width: 480px;
+		.ant-form-item label {
+			font-size: 14px;
+			color: $text-color;
+		}
+		.ant-form-item {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.form-item-flex .ant-form-item-children {
+  display: flex;
+  .ant-input-affix-wrapper {
+		flex: 1;
+		margin-right: 20px;
+	}
+}
+
+.form-modal {
+	.form-model-item {
+		margin-bottom: 20px; 
+		display: flex;
+	}
+	.form-model-label {
+		width: 90px;
+		font-size: 14px;
+		float: left;
+		line-height: 32px;
+		color: #000;
+	}
+	.form-model-content {
+		flex: 1;
+		float: left;
+	}
+	.form-model-checkgroup {
+		.ant-checkbox-wrapper {
+			line-height: 32px;
+			display: block;
+			margin: 0;
+		}
+		.check-arrow {
+			width: 100%;
+			.ant-checkbox-wrapper {
+				.anticon-right {
+					font-size: 12px;
+					float: right;
+					margin-top: 9px;
+					color: $gray-color;
+				}
+			}
+		}
+	}
+}

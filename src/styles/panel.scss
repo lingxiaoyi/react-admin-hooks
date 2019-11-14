@@ -1,0 +1,19 @@
+@import "_theme.scss";
+
+.main-panel {
+	margin-top: $spacing;
+	background: #fff;
+	.main-panel-header {
+		line-height: 40px;
+		min-height: 40px + 2 * $spacing-h;
+		padding: $spacing-h $spacing;
+		display: flex;
+		justify-content: space-between;
+		h2 {
+			font-size: 18px;
+			display: inline;
+			margin-right: 10px;
+			font-weight: 600;
+		}
+	}
+}

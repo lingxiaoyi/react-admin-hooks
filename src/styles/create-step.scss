@@ -1,0 +1,46 @@
+@import "_theme.scss";
+
+.create-step {
+  display: flex;
+  background: #fff;
+  padding: $spacing;
+  margin-bottom: $spacing;
+  justify-content: space-between;
+  .create-step-item {
+    float: left;
+    min-width: 320px;
+  }
+  .create-step-num {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    color: $gray-color;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    &.active {
+      color: #fff;
+      background: $theme-color;
+      border-color: $theme-color;
+    }
+  }
+  .create-step-text {
+    float: left;
+    max-width: 230px;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-top: 5px;
+    }
+    p {
+      font-size: 14px;
+      color: $gray-color;
+      line-height: 18px;
+    }
+  }
+}

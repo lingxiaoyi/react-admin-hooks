@@ -1,0 +1,58 @@
+@import "_theme.scss";
+
+.main-card {
+	background: #fff;
+	border: 1px solid $border-color;
+	border-radius: 2px;
+	width: 240px;
+	.main-card-header {
+		line-height: 40px;
+		padding: 0 $spacing;
+		border-bottom: 1px solid $border-color;
+		h2 {
+			font-weight: normal;
+			font-size: 15px;
+			display: inline;
+			margin-right: 10px;
+			color: #000;
+		}
+		span {
+			font-weight: normal;
+			font-size: 12px;
+		}
+	}
+
+	.main-card-content {
+		padding: $spacing / 2 $spacing;
+		max-height: 300px;
+		overflow: auto;
+	}
+
+	.card-list-item {
+		line-height: 32px;
+		i {
+			float: right;
+			color: $gray-color;
+			margin-top: 9px;
+		}
+		.anticon-close {
+			cursor: pointer;
+			&:hover {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+.card-flex {
+	display: flex;
+	.main-card {
+		flex: 1;
+		float: left;
+		margin-right: $spacing;
+		width: auto;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,178 @@
+@import "_theme.scss";
+
+/* 菜单 */
+.ant-menu-inline {
+	height: 100%;
+	border-right-color: transparent;
+}
+
+.ant-menu-item .iconfont+span, .ant-menu-submenu-title .iconfont+span {
+	opacity: 1;
+	// transition: opacity .3s cubic-bezier(.645,.045,.355,1),width .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+	left: 0;
+	right: auto;
+}
+
+.ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .iconfont+span, .ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .iconfont+span, .ant-menu-inline-collapsed>.ant-menu-item .iconfont+span, .ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .iconfont+span {
+	display: inline-block;
+	max-width: 0;
+	opacity: 0;
+}
+.ant-menu-inline-collapsed > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+	padding: 0!important;
+	text-align: center;
+}
+
+.ant-menu-inline-collapsed .ant-menu-item {
+	.iconfont {
+		font-size: 16px;
+		margin-right: 0;
+	}
+}
+
+.ant-layout-sider-collapsed {
+	.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+		border-right: 0;
+	}
+}
+
+
+/* btn */
+.ant-btn.ant-btn-wide {
+	padding-left: 25px;
+	padding-right: 25px;
+	&.ant-btn-lg {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+.ant-btn.ant-btn-light {
+	opacity: 0.7;
+	// background: #9acbff;
+}
+
+/* popover */
+.ant-popover-content {
+	max-width: 480px;
+	p {
+		margin: 4px 0;
+	}
+}
+.popover-footer-btns {
+	text-align: right;
+	margin-top: 5px;
+	button {
+		margin-left: 10px;
+	}
+}
+
+/* modal */
+.ant-modal {
+	padding-bottom: 0;
+	max-width: 96%;
+	.ant-modal-body {
+		padding: $spacing;
+	}
+	.ant-modal-header {
+		// border-bottom: 0;
+		border-bottom: 1px solid $border-color;
+	}
+	.ant-modal-footer {
+		// border-top: 0;
+		border-top: 1px solid $border-color;
+		button {
+			margin-left: 8px;
+		}
+	}
+}
+
+/* input */
+.ant-input.ant-input-lg,
+.ant-select.ant-select-lg {
+	font-size: 14px;
+}
+
+/* dropdown */
+.ant-select-dropdown-menu {
+	&:hover::-webkit-scrollbar-thumb {
+		background: #d8d8d8;
+	}
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		background: transparent;
+	}
+}
+
+
+/* select */
+.ant-select-dropdown-menu-item-group-title {
+	font-size: 14px;
+	color: #666;
+	background: #f3f3f3;
+}
+
+.ant-select-open:not(.ant-select-focused) {
+	min-width: 120px;
+}
+
+/* dropdown */
+.ant-dropdown-menu.ant-dropdown-menu-vertical.ant-dropdown-content {
+	max-height: 250px;
+}
+
+/* checkbox */
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+	margin-left: 0;
+	margin-right: 8px;
+}
+
+/* pagination */
+.ant-pagination-options li {
+	text-align: left;
+}
+
+/* tree */
+.ant-tree li span.ant-tree-switcher,
+.ant-tree li span.ant-tree-iconEle {
+	width: 12px!important;
+}
+.ant-tree li ul {
+	padding-left: 12px!important;
+}
+.ant-tree-title {
+	display: block;
+	.icon-code {
+		margin-right: 5px;
+	}
+	.edit-icon {
+		visibility: hidden;
+		color: $theme-color;
+		margin-left: 5px;
+	}
+	&:hover {
+		.edit-icon {
+			visibility: visible;
+		}
+	}
+}
+
+/* tabs */
+.ant-tabs-bar {
+	margin-bottom: 0 !important;
+}
+
+.ant-tabs {
+	overflow: initial !important;
+	.ant-tabs-nav .ant-tabs-tab:empty {
+		padding: 0;
+		margin: 0;
+	}
+}

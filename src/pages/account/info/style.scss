@@ -1,0 +1,14 @@
+@import '@/styles/_theme.scss';
+
+.auth-info-header {
+  p {
+    color: $gray-color;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    line-height: 1;
+  }
+}
